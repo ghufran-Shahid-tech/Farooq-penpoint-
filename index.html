@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farooq PenPoint</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+
+<nav>
+  <h2>Farooq PenPoint</h2>
+  <button onclick="scrollToSection('contact')">Contact</button>
+</nav>
+
+<header>
+  <div class="shape one"></div>
+  <div class="shape two"></div>
+  <div class="shape three"></div>
+
+  <div class="hero-frame">
+    <img src="png.jpg" alt="Profile">
+  </div>
+
+  <h1>Farooq Qaiser</h1>
+  <div class="typed-container"><span id="typed-text"></span></div>
+
+  <button class="primary" onclick="scrollToSection('booking')">Book Now</button>
+  <button class="secondary" onclick="scrollToSection('services')">Our Services</button>
+</header>
+
+<section id="about">
+  <h2 class="section-title">About Us</h2>
+  <p class="about">
+    Farooq PenPoint offers books, gifts, mug printing, event management,
+    parking services, and birthday decorations with creativity and quality.
+  </p>
+</section>
+
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <div class="services">
+    <div class="service-card"><h3>Book Store</h3><p>All books & stationery</p></div>
+    <div class="service-card"><h3>Gift Shop</h3><p>Premium gift items</p></div>
+    <div class="service-card"><h3>Parking</h3><p>Reliable parking services</p></div>
+    <div class="service-card"><h3>Mug Printing</h3><p>Custom mug designs</p></div>
+    <div class="service-card"><h3>Event Management</h3><p>Full event planning</p></div>
+    <div class="service-card"><h3>Birthday Decor</h3><p>Creative decorations</p></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Why Choose Us</h2>
+  <div class="why">
+    <div>Trusted Quality</div>
+    <div>Creative Designs</div>
+    <div>Affordable Pricing</div>
+    <div>On-Time Delivery</div>
+  </div>
+</section>
+
+<section id="booking">
+  <h2 class="section-title">Book a Service</h2>
+  <form id="bookingForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <select required>
+      <option value="">Select Service</option>
+      <option>Event Decoration</option>
+      <option>Mug Printing</option>
+      <option>Gift Order</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="contact-right">
+    <p>Email: farooqqaiser258@gmail.com</p>
+    <p>Phone: 0308-9856139</p>
+    <p>Location: Karachi, Pakistan</p>
+  </div>
+</section>
+
+<footer>© 2026 Farooq PenPoint. All Rights Reserved.</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>

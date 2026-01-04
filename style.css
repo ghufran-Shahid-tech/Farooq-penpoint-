@@ -1,0 +1,196 @@
+
+:root{
+  --grad1:#ff5fa2;
+  --grad2:#4f8bff;
+  --black:#0b0b0b;
+  --gray:#f4f4f4;
+}
+
+/* BASE */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#fff;color:#000;scroll-behavior:smooth;}
+a{text-decoration:none;color:inherit;}
+
+/* NAVBAR */
+nav{
+  position:sticky;
+  top:0;
+  padding:15px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(255,255,255,0.3);
+  backdrop-filter:blur(20px);
+  z-index:100;
+}
+nav h2{font-size:1.4rem;}
+nav button{
+  padding:10px 20px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,var(--grad1),var(--grad2));
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* HERO */
+header{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+header::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,var(--grad1),var(--grad2),#6a11cb);
+  background-size:300% 300%;
+  animation:move 10s infinite;
+  z-index:-3;
+}
+@keyframes move{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+.shape{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(40px);
+  opacity:.35;
+  z-index:-2;
+}
+.shape.one{width:220px;height:220px;background:#fff;top:15%;left:10%;}
+.shape.two{width:300px;height:300px;background:#ffd700;bottom:10%;right:5%;}
+.shape.three{width:180px;height:180px;background:#00eaff;top:65%;left:25%;}
+
+.hero-frame{
+  width:230px;height:275px;
+  background:#fff;
+  border-radius:40px;
+  overflow:hidden;
+  margin-bottom:25px;
+}
+.hero-frame img{width:100%;height:100%;object-fit:cover;}
+
+header h1{font-size:2.5rem;margin-bottom:15px;}
+.typed-container{font-size:1.4rem;height:40px;margin-bottom:25px;}
+
+header button{
+  padding:14px 28px;
+  border:none;
+  border-radius:30px;
+  margin:6px;
+  font-weight:600;
+  cursor:pointer;
+}
+header .primary{background:#000;color:#fff;}
+header .secondary{background:#fff;color:#000;}
+
+/* SECTIONS */
+section{padding:80px 8%;}
+.section-title{
+  text-align:center;
+  font-size:2.3rem;
+  margin-bottom:45px;
+}
+.section-title::after{
+  content:"";
+  width:80px;height:4px;
+  background:linear-gradient(135deg,var(--grad1),var(--grad2));
+  display:block;margin:12px auto;border-radius:10px;
+}
+
+/* ABOUT */
+.about{max-width:900px;margin:auto;text-align:center;color:#444;}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+.service-card{
+  background:var(--gray);
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  transition:.3s;
+}
+.service-card:hover{
+  background:linear-gradient(135deg,var(--grad1),var(--grad2));
+  color:#fff;
+  transform:translateY(-10px);
+}
+
+/* WHY */
+.why{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+.why div{
+  background:var(--gray);
+  padding:40px 20px;
+  border-radius:22px;
+  font-weight:600;
+  text-align:center;
+  transition:.3s;
+}
+.why div:hover{
+  background:linear-gradient(135deg,var(--grad1),var(--grad2));
+  color:#fff;
+  transform:translateY(-10px);
+}
+
+/* BOOKING */
+#booking form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+#booking input,#booking select{
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+#booking button{
+  padding:14px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,var(--grad1),var(--grad2));
+  color:#fff;
+  font-weight:600;
+}
+
+/* CONTACT */
+.contact{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:30px;
+}
+.contact-right{
+  background:linear-gradient(135deg,var(--grad1),var(--grad2));
+  padding:30px;
+  border-radius:30px;
+  color:#fff;
+  text-align:center;
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
